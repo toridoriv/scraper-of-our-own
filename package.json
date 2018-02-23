@@ -2,7 +2,7 @@
   "name": "scraper-of-our-own",
   "version": "0.0.1",
   "description": "JS code to obtain data from Archive of Our Own",
-  "main": "server.js",
+  "main": "app.js",
   "author": "Victoria Tori Rodríguez <virodriguez.fe@gmail.com>",
   "license": "MIT",
   "dependencies": {
