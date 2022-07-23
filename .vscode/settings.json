@@ -1,0 +1,20 @@
+{
+  "[javascript, typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.eslint": true
+  },
+  "eslint.debug": false,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "json"
+  ],
+  "editor.formatOnSave": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.suggestionActions.enabled": false,
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "disableSizeLimit": true,
+    "esModuleInterop": true,
+    "lib": [
+      "ESNext"
+    ],
+    "maxNodeModuleJsDepth": 3,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noErrorTruncation": true,
+    "noImplicitOverride": false,
+    "noStrictGenericChecks": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "target": "esnext",
+    "useUnknownInCatchVariables": true,
+    "typeRoots": ["node_modules/@types", "./typings"]
+  },
+  "typeAcquisition": {
+    "enable": false
+  },
+  "ts-node": {
+    "files": true,
+  }
+}
