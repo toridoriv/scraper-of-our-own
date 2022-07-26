@@ -1,22 +1,7 @@
-# Scraper of Our Own
-A simple Javascript code to scrape data from [Archive of Our Own](http://archiveofourown.org).
+# Scraper of Our Own ✨
 
-## Getting Started
+<!-- Badges -->
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-bd93f9.svg)](https://opensource.org/licenses/)
 
-### Prerequisites
-* Node.Js 6 or higher
-* NPM 3 or higher
-
-### Usage
-1. Clone or download this repo
-2. Install the required dependencies with ```npm install```
-3. In ```app.js``` add the Ids of the fics you want to scrape in the ```ids``` array.
-4. In your terminal, write ```node app.js``` and that'll generate a json file with the data you want :)
-5. The json file will contain the following data: id, title, link, authors, authors links, summary, rating and language of the fics, but you can check the code and add more data if you need it.
-
-## Demo
-I'm currently working on a demo, but in the meanwhile, you can check an example of the [json file this code create](data.json).
-
-## License
-The MIT License (MIT)
-
+<!-- Description -->
+<center><img src="https://monophy.com/media/USVf3D8MviFo3Eonfx/monophy.gif" alt="A gif indicating that this is a work in progress"/></center>
