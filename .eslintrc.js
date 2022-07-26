@@ -1,29 +1,47 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   env: {
-    es2022: true,
+    es2021: true,
     node: true,
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:sort/recommended",
-    "prettier",
-  ],
+  extends: ["eslint:recommended", "plugin:sort/recommended", "prettier"],
   ignorePatterns: ["node_modules**", ".tmp/**"],
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "sort", "json-format", "prettier"],
+  overrides: [
+    {
+      extends: ["plugin:@typescript-eslint/recommended"],
+      files: ["*.ts"],
+      parser: "@typescript-eslint/parser",
+      plugins: ["@typescript-eslint"],
+      rules: {
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/no-var-requires": "warn",
+      },
+    },
+    {
+      files: ["*.mjs", "rollup.config.js"],
+      parserOptions: {
+        sourceType: "module",
+      },
+    },
+  ],
+  parserOptions: {
+    ecmaVersion: "latest",
+  },
+  plugins: ["sort", "json-format", "prettier"],
   root: true,
   rules: {
-    "@typescript-eslint/no-var-requires": "off",
+    "no-empty": "warn",
+    "no-unused-vars": "warn",
+    "no-var": "warn",
     "prettier/prettier": [
       "error",
       {
+        bracketSpacing: true,
         endOfLine: "lf",
         printWidth: 80,
         quoteProps: "consistent",
         semi: true,
-        trailingComma: "all",
+        trailingComma: "es5",
       },
     ],
     "sort/type-properties": "error",
